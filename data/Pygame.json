@@ -1,0 +1,164 @@
+[
+    {
+        "id": "Runner",
+        "title": "Ben 10 Runner - Made using Pygame",
+        "contentHTML": [
+            "<p class='intro'>",
+                "A Ben 10–themed endless runner — my first ever finished game.",
+            "</p>",
+
+            "<p>",
+                "<span class='highlight'>Ben 10 Runner</span> was my introduction to both Python and Pygame — a fully playable endless runner game, and the first time I ever felt like I’d “finished” something real.",
+                " It started as a simple YouTube tutorial, but quickly spiraled into something of my own.",
+            "</p>",
+
+            "<p>",
+                "I added <span class='highlight'>parallax backgrounds</span>, <span class='highlight'>enemy animations</span>, and even experimented with a power-up system where Ben could transform into aliens — though I eventually removed it due to bugs and balance issues.",
+                " (Some of the old code still lingers in the files as proof of that brief experiment.)",
+            "</p>",
+
+            "<p>",
+                "I didn’t release this game publicly — most of the assets came from random sources and I didn’t track licenses at the time. But it remains my most cherished project, because it’s what made me realize how fun and addictive game development can be.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Fully playable endless runner</span></li>",
+                "<li>† <span class='highlight'>Sprite animations + parallax backgrounds</span></li>",
+                "<li>† <span class='highlight'>First solo game built entirely in Python</span></li>",
+                "<li>† <span class='highlight'>Mix of multiple tutorial sources</span></li>",
+            "</ul>"
+        ],
+        "heroImage": "assets/images/webp/Pygame/BenRun.webp",
+        "gallery": 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Pygame/BenRun.webp",
+                "caption"   :   "Endless Runner in Pygame"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Pygame/ITR1.webp",
+                "caption"   :   "Iteration 1 - learned from clear code"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Pygame/ITR2.webp",
+                "caption"   :   "Final Version"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "assets/videos/BenRun.mp4",
+                "poster"    :   "assets/images/webp/Pygame/BenRun2.webp",
+                "caption"   :   "Demo - Full Version in Youtube"
+            }
+        ],
+        "links": [
+            {
+                "label": "View on GitHub",
+                "url": "https://github.com/LoneWolf014/Ben10-Runner"
+            },
+            {
+                "label": "View on Youtube",
+                "url": "https://youtu.be/pI7aBKgjXJY?feature=shared"
+            }
+        ],
+        "palette": {}
+    },
+    {
+        "id": "RayCaster",
+        "title": "RayCaster - A simple Raycasting engine with pygame",
+        "contentHTML": [
+            "<p class='intro'>",
+                "A weekend rabbit hole into how DOOM faked 3D in 1993.",
+            "</p>",
+
+            "<p>",
+                "This was a spontaneous project, born after watching a YouTube video about the original <em>DOOM</em>. I asked myself, ",
+                "“How did they make 3D games without real 3D engines?” The answer was <span class='highlight'>raycasting</span> — a clever illusion built with trigonometry.",
+            "</p>",
+
+            "<p>",
+                "I followed tutorials from creators like <em>monkey see monkey do</em> and <em>FinFet</em>, breaking down the math behind early 90s engines.",
+                " It blew my mind how simple formulas could trick the eye into seeing depth.",
+            "</p>",
+
+            "<p>",
+                "It’s not a real 3D engine — you can’t look up or down — but it felt like uncovering game dev archaeology.",
+                " Bonus trivia: John Carmack and Romero didn’t use version control while building DOOM. Insane.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Basic raycasting engine in Pygame</span></li>",
+                "<li>† <span class='highlight'>2D → 3D illusion using trigonometry</span></li>",
+                "<li>† <span class='highlight'>Inspired by DOOM / Wolfenstein techniques</span></li>",
+                "<li>† <span class='highlight'>Built solo in a weekend for fun</span></li>",
+            "</ul>"
+        ],
+        "heroImage": "assets/images/webp/Pygame/RayCast.webp",
+        "gallery": [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Pygame/RayCast.webp",
+                "caption"   :   "It's an ordinary raycaster - do i had to give a caption about it?"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=KqI5c6rqCqg",
+                "caption"   :   "Demo - Honestly i got no idea why i am embedding it here after giving youtube links"
+            }
+        ],
+        "links": [
+            {
+                "label": "View on GitHub",
+                "url": "https://github.com/LoneWolf014/3D-Projection"
+            },
+            {
+                "label": "View on Youtube",
+                "url": "https://youtu.be/KqI5c6rqCqg"
+            }
+        ],
+        "palette": {}
+    },
+    {
+        "id": "crossHair",
+        "title": "crossHair - A minigame made in pygame",
+        "contentHTML": [
+            "<p class='intro'>",
+                "It’s not really a game — just something fun to click around with.",
+            "</p>",
+
+            "<p>",
+                "<span class='highlight'>crossHair</span> is a simple mouse-based minigame I made while learning Pygame.",
+                " There’s no real goal — just click targets with a crosshair, watch them disappear, and enjoy the simplicity.",
+            "</p>",
+
+            "<p>",
+                "It’s tiny, rough, and not worth its own repo — but I’m still fond of it.",
+                " It reminds me of the small wins that kept me going during the learning curve.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Target-clicking minigame</span></li>",
+                "<li>† <span class='highlight'>Custom mouse crosshair</span></li>",
+                "<li>† <span class='highlight'>Made during early Pygame learning phase</span></li>",
+            "</ul>"
+        ],
+        "heroImage": "assets/images/webp/Pygame/CrossHair.webp",
+        "gallery": [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Pygame/CrossHair.webp",
+                "caption"   :   "CrossHair - point and click and pow!"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "assets/videos/Crosshair.mp4",
+                "poster"    :   "assets/images/webp/Pygame/CrossHair2.webp",
+                "caption"   :   "Seriously who'd need a video for a game like this... it's too stupid to keep this portfolio work like seriously lol"
+            }
+        ],
+        "links": [],
+        "palette": {}
+    }
+]

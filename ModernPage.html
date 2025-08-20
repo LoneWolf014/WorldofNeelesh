@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neelesh Damarla</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/images/WPLOGO2.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Cormorant Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        
+    <!-- Italliano -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    
+    <!-- Updock -->
+    <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+    
+    <!-- JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="ModernStyle.css">
+
+    
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="Home">
+        <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+            <source src="assets/videos/HeroBG-1.webm" type="video/webm">
+            <!-- <source src="assets/videos/Ghostie.mp4" media="(max-width:600px)" type="video/mp4"> -->
+            <!-- Fallback -->
+            <img src="assets/images/pngs/Hero.png" alt="Hero background">
+        </video>
+
+        <div class="hero-overlay flex">
+
+            <div class="flip-card-wrapper flex">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front flex">
+                            <div class="logo">
+                                <img src="assets/images/NavLogo.svg" alt="CARDLOGO" class="card-logo">
+                            </div>
+                            <div class="title">
+                                <h2>Neelesh Damarla</h2>
+                            </div>
+                            <div class="caption">
+                                <h3>“A little lost, a little inspired”</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back flex">
+                            <p class="card-back-content">
+                                “Welcome! I’m Neelesh — a fresh grad exploring game design 
+                                with curiosity and persistence. I love sharing ideas, 
+                                tinkering, and learning together with others.”
+                            </p>
+                            <a href="assets/Resume.pdf" download="Neelesh_Resume">
+                                <button class="resume" aria-placeholder="Resume">Resume</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="scroll-down">
+                    <i class="material-icons">
+                        keyboard_arrow_down
+                    </i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <header class="primary-header flex">
+            <div>
+                <img src="assets/images/NavLogo.svg" alt="MYLOGO" class="logo">
+            </div>
+
+            <button class="mobile-nav-toggle" 
+                aria-controls="primary-navigation" aria-expanded="false">
+                
+                <span class="sr-only">Menu</span>  
+
+                <svg stroke="var(--btn-clr)" fill="none" class="hamBurger" viewBox="-10 -10 120 120" width="30">
+                    <path class="line"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"> 
+                    </path>
+                </svg>
+            </button>
+
+            <nav>
+                <ul id="primary-navigation" 
+                    data-visible="false"
+                    class="primary-navigation flex">
+
+                    <li class="active">
+                        <a href="#Home">
+                            <span aria-hidden="true">00</span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#About_Me">
+                            <span aria-hidden="true">01</span>
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Projects">
+                            <span aria-hidden="true">02</span>
+                            My Works
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer">
+                            <span aria-hidden="true">03</span>
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="assets/Resume.pdf" download="Neelesh_Resume">
+                            <span aria-hidden="true">04</span>
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <section class="AboutMe flex" id="About_Me">
+        <hr class="Section_Heading">
+        <div class="container flex">
+            <div class="txt-content">
+                <p class="intro">Hello and welcome.</p>
+
+                <p class="justify">
+                    I'm <span class="highlight">Neelesh</span> — a <ins> Computer Science graduate with a focus on Gaming Technology</ins>.
+                    Right now, I’m learning full-stack development with Java while designing my first
+                    fully narrative-driven game, <span class="highlight">OFFLINE</span> — an interactive mystery adventure inspired by <ins>ZORK</ins>.
+                </p>
+
+                <p class="justify">
+                    I like building systems that feel alive — from quick Python tools to 3D prototypes in Unreal Engine.
+                    Most of what I know came from experimenting, failing, debugging at weird hours, and somehow making it work.
+                </p>
+
+                <p class="justify">
+                    I’m curious about how games actually *feel* to play — which pulled me into:
+                </p>
+
+                <ul class="skills">
+                    <li>† <span class="highlight">Gameplay Scripting</span></li>
+                    <li>† <span class="highlight">Game Systems Design</span></li>
+                    <li>† <span class="highlight">3Cs — Character, Controls, Camera</span></li>
+                    <li>† <span class="highlight">Interactive Storytelling</span> & emotional pacing</li>
+                </ul>
+
+                <hr />
+
+                <p class="subsection justify">General Trivia — <em>just in case you're still reading...</em></p>
+
+                <p class="justify">
+                    I love jamming weird stories and geeking out over old game mechanics with people who get excited about design like I do.
+                </p>
+
+                <ul class="interests">
+                    <li>† <span>Video Games |</span> Life is Strange, The Walking Dead, Duskwood</li>
+                    <li>† <span>Animated Shows |</span> Ben 10, Arcane</li>
+                    <li>† <span>Novels |</span> Harry Potter, <em>The Making of Riley Paige Series</em> by Blake Pierce</li>
+                </ul>
+
+                <p class="footer-link">
+                    🔗 <a href="https://github.com/LoneWolf014" target="_blank">github.com/LoneWolf014</a>
+                </p>
+            </div>
+
+            <div class="img-content">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="Projects flex" id="Projects">
+        <hr class="hr-text" data-content="College Projects">
+        <div class="card_container flex" data-content="College Projects">
+            <div class="card" id="Lost_in_Castle" 
+                style=
+                "--bg-img: url('assets/images/pngs/COS.png'); 
+                --h-bg-img: url('assets/images/webp/GL_COS/COS.webp'); 
+                --size: cover">
+                <div class="overlay flex">
+                    <h1>LOST IN CASTLE</h1>
+                    <p>Third Person Action adventure with predefined cameras</p>
+                </div>
+            </div>
+
+            <div class="card" id="MetaCam" 
+                style=
+                    "--bg-img: url('assets/images/pngs/MC.png');
+                     --h-bg-img: url('assets/images/webp/GL_MCAM/MC.webp'); 
+                    --size: contain;">
+                <div class="overlay flex">
+                    <h1>META CAM</h1>
+                    <p>Failed Attempt of Motion Capture Using OpenCv</p>
+                </div>
+            </div>
+
+            <div class="card" id="Play90s"
+                style=
+                "--bg-img: url('assets/images/pngs/P90s.png'); 
+                --h-bg-img: url('assets/images/webp/GL_P90s/P90s.webp'); 
+                --size: cover">
+                <div class="overlay flex">
+                    <h1>Play #90s</h1>
+                    <p>My First step in the world of gaming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Projects flex" id="Projects">
+        <hr class="hr-text" data-content="AI Collabs">
+        <div class="card_container flex" data-content="AI Collabs">
+            <div class="card" id="TEXTCRT" 
+                style=
+                "--bg-img: url('assets/images/pngs/CRT_TA.png'); 
+                --h-bg-img: url('assets/images/webp/GL_TA/CRT_TXT.webp'); 
+                --size: cover">
+                <div class="overlay flex">
+                    <h1>CRT TEXT ADVENTURE GAME</h1>
+                    <p>Remember ZORK? I wanna see how it works cz it seems so simple but discovered ancient tibetan knowledge called command parser</p>
+                </div>
+            </div>
+
+            <div class="card" id="CRT_SNAKE_1" 
+                style=
+                "--bg-img: url('assets/images/pngs/Snake1.png');
+                --h-bg-img: url('assets/images/webp/GL_Snake1/Snake1.webp'); 
+                --size: cover">
+                <div class="overlay flex">
+                    <h1>CRT_SNAKE_1</h1>
+                    <p>Do you know any game programming learner that never tried snake? yeah nice to meet you but i let AI code it but with a design twist </p>
+                </div>
+            </div>
+
+            <div class="card" id="CRT_SNAKE_2"
+                style=
+                "--bg-img: url('assets/images/pngs/Snake2.png');
+                --h-bg-img: url('assets/images/webp/GL_Snake2/Snake2.webp');
+                --size: cover">
+                <div class="overlay flex">
+                    <h1>CRT_SNAKE_2</h1>
+                    <p>Same Snake Game idea and this too i let AI code but with different design choices</p>
+                </div>
+            </div>
+
+            <div class="card" id="CRT_Hangman" 
+                style=
+                    "--bg-img: url('assets/images/pngs/Hangman.png');
+                    --h-bg-img: url('assets/images/webp/GL_Hangman/TH.webp');">
+                <div class="overlay flex">
+                    <h1>Terminal Hangman</h1>
+                    <p>Welcome back to 2000 nerds fun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Projects flex" id="Projects">
+        <hr class="hr-text" data-content="Personal Ideas">
+        
+        <!-- Unreal Engine works -->
+        <div class="subcontainer flex" style="border: 2px solid black;">
+            <hr class="hr-text" data-content="Unreal Engine">
+
+            <div class="card_container flex" data-content="Unreal" style="border: none;">
+                <div class="card" id="HD_2D_1" 
+                    style=
+                        "--bg-img: url('assets/images/pngs/HD2DCH.png');
+                         --h-bg-img: url('assets/images/webp/Unreal/HDCH.webp');
+                         --size: cover;">
+                    <div class="overlay flex">
+                        <h1>HD_2D - 1</h1>
+                        <p>Inspired by OctoPath Traveller</p>
+                    </div>
+                </div>
+
+                <div class="card" id="HD_2D_2" 
+                    style=
+                        "
+                        --bg-img: url('assets/images/pngs/HD2DCams.png');
+                        --h-bg-img: url('assets/images/webp/Unreal/HD2DCams_OL.webp');
+                         --size: cover">
+                    <div class="overlay flex">
+                        <h1>HD_2D - 2</h1>
+                        <p>Project that only focuses on the camera issues raised in HD_2D - 1</p>
+                    </div>
+                </div>
+
+                <div class="card" id="MLB"
+                 style=
+                    "--bg-img: url('assets/images/pngs/MLB.png');
+                     --h-bg-img: url('assets/images/webp/Unreal/MLB2.webp');
+                     --size: cover">
+                    <div class="overlay flex">
+                        <h1>My Last Breath — Cinematic Teaser</h1>
+                        <p>
+                            I get a little ambitious just like anyone who first 
+                            tasted the power of unreal engine and this is the result of that.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" id="fire" 
+                    style=
+                        "--bg-img: url('assets/images/pngs/Fire.png');
+                         --h-bg-img: url('assets/images/webp/Unreal/Fire_OL.webp');">
+                    <div class="overlay flex">
+                        <h1>Fire Material — Stylized Torch Flame</h1>
+                        <p>When Niagara melted my laptop, I had to rethink how fire even works.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PYGAME CHARMS -->
+        <div class="subcontainer flex" style="border: 2px solid black;">
+            <hr class="hr-text" data-content="Pygame Charms">
+
+            <div class="card_container flex" data-content="Pygame" style="border: none;">
+                <div class="card" id="Runner" 
+                    style=
+                        "--bg-img: url(assets/images/pngs/BenRun.png);
+                         --h-bg-img: url(assets/images/webp/Pygame/BenRun.webp);">
+                    <div class="overlay flex">
+                        <h1>Runner</h1>
+                        <p>An Endless Runner Game Made using Pygame</p>
+                    </div>
+                </div>
+
+                <div class="card" id="RayCaster" 
+                    style=
+                        "--bg-img: url('assets/images/pngs/RayCast.png');
+                        --h-bg-img: url('assets/images/webp/Pygame/RayCast.webp');">
+                    <div class="overlay flex">
+                        <h1>RayCaster</h1>
+                        <p>A simple Raycasting engine with pygame</p>
+                    </div>
+                </div>
+
+                <div class="card" id="crossHair" 
+                    style=
+                        "--bg-img: url('assets/images/pngs/CrossHair.png');
+                        --h-bg-img: url('assets/images/webp/Pygame/CrossHair.webp');">
+                    <div class="overlay flex">
+                        <h1>CrossHair</h1>
+                        <p>A minigame made in pygame</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer flex" id="footer">
+        <div class="logo flex">
+            <div class="image">
+                <img src="assets/images/NavLogo.svg" alt="MYLOGO" class="footer-logo">
+            </div>
+            <div class="name flex">
+                <img src="assets/images/Neelesh.svg" alt="FirstName" class="footer-logo-name">
+                <img src="assets/images/Damarla.svg" alt="SurName" class="footer-logo-name">
+            </div>
+        </div>
+
+        <div class="Contact flex">
+            <h1 class="ftr-title">
+                Contact Me :
+            </h1>
+            <ul class="contact-list flex">
+                <li class="list-item flex">
+                    <span class="material-icons">
+                        call
+                    </span>
+                    <a href="tel:+916281323064" class="ftr-cntct-txt">
+                        +91 6281323064
+                    </a>
+                </li>
+                <li class="list-item flex">
+                    <span class="material-icons">
+                        mail
+                    </span>
+                    <a href="mailto:damarlaneelesh@gmail.com" class="ftr-cntct-txt">
+                        damarlaneelesh@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="Socials flex">
+            <h1 class="ftr-title">
+                Follow Me On :
+            </h1>
+            <ul class="social-list flex">
+                <li class="list-item flex">
+                    <a href="https://github.com/LoneWolf014" target="_blank" class="flex">
+                        <span class="material-icons fa-brands fa-github"></span>
+                        <p class="ftr-cntct-txt">Github</p>
+                    </a>
+                </li>
+                <li class="list-item flex">
+                    <a href="https://www.instagram.com/lonewolf.014/" target="_blank" class="flex">
+                        <span class="material-icons fa-brands fa-instagram"></span>
+                        <p class="ftr-cntct-txt">Instagram</p>
+                    </a>
+                </li>
+                <li class="list-item flex">
+                    <a href="https://youtube.com/@lonewolf0144" target="_blank" class="flex">
+                        <span class="material-icons fa-brands fa-youtube"></span>
+                        <p class="ftr-cntct-txt">Youtube</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- PROJECT INFO MODAL -->
+    <div class="modal flex" data-modal-visible="false" aria-hidden="false">
+        <div class="modal-content flex" role="dialog" aria-modal="true">
+            <header class="modal-header flex">
+                <h1>PROJECT TITLE</h1>
+                <button class="modal-close"></button>
+            </header>
+            <div class="modal-body flex">
+                <div class="modal-text">
+                    Text Content Goes Here
+                </div>
+                <div class="modal-media flex">
+                    <div class="modal-image">
+                        IMAGE CONTENT GOES HERE
+                    </div>
+                    <div class="modal-gallery flex">
+                        IMAGE GALLERY
+                    </div>
+                </div>
+            </div>
+            <footer class="modal-footer flex">
+                <!-- <a href="#" class="modal-footer-link">GitHub</a>
+                <a href="#" class="modal-footer-link">Youtube</a> -->
+            </footer>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX / PROJECT MEDIA GALLERY -->
+    <div class="lightbox" data-lightbox-visible="false">
+        <button class="lightbox-close">&times;</button>
+
+        <div class="lightbox-content">
+            <button class="lightbox-prev">‹</button>
+            
+            <!-- Wrap media in <figure> -->
+            <figure class="lightbox-media">
+            <!-- JS will inject <img> or <video> or <iframe> -->
+            <figcaption class="lightbox-caption"></figcaption>
+            </figure>
+
+            <button class="lightbox-next">›</button>
+        </div>
+
+        <div class="lightbox-thumbnails"></div>
+    </div>
+
+
+    
+    <script src="ModernScriptt.js"></script>
+</body>
+</html>

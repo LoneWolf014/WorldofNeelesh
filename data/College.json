@@ -1,0 +1,260 @@
+[
+    {
+        "id" : "Lost_in_Castle",
+        "title" : "Lost in Castle",
+        "contentHTML" : 
+        [
+            "<p class='intro'>A final-semester experiment in cinematic gameplay, built in Unreal Engine 5.</p>",
+  
+            "<p class='justify'><span class='highlight'>Lost in Castle</span> was my Jan–May 2025 graduation project — a third-person action-adventure prototype inspired by <span class='highlight'><ins><em>Silent Hill</em></ins></span> and <span class='highlight'><ins><em>Resident Evil</em></ins></span>. I wanted to see how <span class='highlight'>camera work</span> could shape tension, not just frame the action.</p>",
+            
+            "<p class='justify'>I mixed <span class='highlight'>fixed shots</span> with <span class='highlight'>spline-following cinematic cameras</span>, paired with <span class='highlight'>tank controls</span>. It forced players to commit to movement, making every angle change feel deliberate — and sometimes disorienting in a good way.</p>",
+            
+            "<p class='justify'>Under the hood: basic <span class='highlight'>combat, enemy AI (behavior trees)</span>, interaction systems, and plenty of Blueprint work. My biggest surprise? The <span class='highlight'>torch fire material</span> was harder to get right than the camera logic. (That challenge got its own card in <em>Personal Ideas</em>.)</p>",
+            
+            "<p class='justify'>This style demands absurd precision — a misplaced trigger by a few units could ruin a shot or leave a blind spot. But when it worked, it felt like a game that could’ve released in 2001.</p>",
+            
+            "<p class='subsection justify'>What’s inside</p>",
+            
+            "<ul class='skills'>",
+            "<li>† <span class='highlight'>Unreal Blueprints</span> for core gameplay</li>",
+            "<li>† <span class='highlight'>Cinematic camera scripting</span> with splines + triggers</li>",
+            "<li>† <span class='highlight'>Tank controls</span> tuned for tension</li>",
+            "<li>† <span class='highlight'>Modular environments</span> + VFX (Niagara)</li>",
+            "</ul>",
+            
+            "<hr />",
+            "<p class='subsection justify'>General Trivia — <em>just in case you're still reading...</em></p>",
+            "<p class='justify note'></ hr>“My AI system was rushed and buggy, but the experiment proved that cinematic cameras can still create tension in modern engines. If I had more time, I would improve player visibility and level readability.” that has to show something right?</p>",
+
+            "<p class='justify'>Someday, I’d like to revisit this and build a full game around this kind of tightly framed, cinematic control.</p>"
+
+        ],
+        "heroImage" : "assets/images/webp/GL_COS/WIP.webp",
+        "gallery" : 
+        [
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/WIP.webp",
+                "caption" : "WIP Image 1 - before texture testing"
+            },
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/WallTextureTest.webp",
+                "caption" : "Texture Testing - The style supposed to be between stylized and realistic here it looks more real rather than stylized"
+            },
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/WallTextureTest_2.webp",
+                "caption" : "Texture Test 2"
+            },
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/FireMaterial.webp",
+                "caption" : "Fire Shader - I discussed more about it in 'Personal Ideas - Unreal' section"
+            },
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/SplineCams.webp",
+                "caption" : "Camera follows Predefined Spline Paths - inspired from Silent Hill 1999"
+            },
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/Reference.webp",
+                "caption" : "The Question Mark is trigger that offers help/tutorial. inspired from the game Spiderman 2000"
+            },
+            {
+                "type": "image", 
+                "src" : "assets/images/webp/GL_COS/WIP2.webp",
+                "caption" : "WIP Image 2 - before texture testing"
+            },
+            {
+                "type": "video", 
+                "src" : "https://www.youtube.com/watch?v=Ef9kW-POO7w",
+                "caption" : "Gameplay Demo Video"
+            }
+        ],
+        "links" : 
+        [
+            {
+                "label" : "Youtube",
+                "url" : "https://youtu.be/Ef9kW-POO7w?si=Sp4V7Lp6_x7lrA_g"
+            }
+        ],
+        "palette": 
+        {
+            "--clr-bg": "#fff4f2",
+            "--clr-text": "#1a1a1a"
+        }
+    },
+    {
+        "id": "MetaCam",
+        "title": "MetaCam",
+        "contentHTML":
+        [
+            "<p class='intro'>Motion Capture Tool built with Python, MediaPipe, and OpenCV</p>",
+
+            "<p class='justify'>",
+                "<span class='highlight'>Motion Capture Tool</span> was my minor project for Semester 7 (Aug – Nov 2024),",
+                "where I tried building a DIY motion-capture pipeline using Python and open-source tools —",
+                "no fancy suits or studio setups.",
+            "</p>",
+
+            "<p class='justify'>",
+                "It works by detecting <span class='highlight'>pose, face, and hand landmarks</span> in real-time",
+                "using <span class='highlight'>MediaPipe</span>, then exporting that motion data as a",
+                "timestamped <span class='highlight'>JSON file</span> that’s game-engine ready.",
+                "The goal was to generate simple animations using just a webcam or phone camera.",
+            "</p>",
+
+            "<p class='justify'>",
+                "I built a custom interface with Python and Pygame where users can switch between camera inputs,",
+                "record motion clips, and watch live pose tracking as they move.",
+                "While I didn’t get to test it directly inside Unreal Engine, the export logic is there —",
+                "the JSON is clean, structured, and ready to rig.",
+            "</p>",
+            
+            "<p class='justify'>",
+                "Most of the heavy lifting — like pose estimation and JSON structuring — was done by adapting",
+                "open-source code with a *lot* of AI help (a little thing called vibe coding).",
+            "</p>",
+
+            "<p class='justify'>",
+                "The whole idea was to make animation more accessible — especially for solo devs or indies",
+                "without expensive mocap gear. Honestly, I had zero idea how this worked before,",
+                "but with a bit of trial, error, and AI assistance, I managed to ship a working prototype.",
+            "</p>",
+
+            "<p class='justify'>",
+                "It’s rough around the edges, sure — but it taught me a lot about <span class='highlight'>data flow, pose estimation, and real-time input handling</span>.",
+                "I’d love to revisit this someday and take it one step further into actual skeletal animation.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Python + Pygame UI</span></li>",
+                "<li>† <span class='highlight'>MediaPipe pose detection</span></li>",
+                "<li>† <span class='highlight'>OpenCV input & video streaming</span></li>",
+                "<li>† <span class='highlight'>Landmark-to-JSON export logic</span></li>",
+            "</ul>"
+
+        ],
+        "heroImage": "assets/images/webp/GL_MCAM/MC_OL.webp",
+        "gallery":
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_MCAM/MC_OL.webp",
+                "caption"   :   "Interface of MetaCam"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_MCAM/M_Cam.webp",
+                "caption"   :   "Pose Detection using mediapipe"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_MCAM/MC.webp",
+                "caption"   :   "Both Laptop webcam and mobile cam (using third-party app droidcam) can be used for recordings"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_MCAM/JSONData.webp",
+                "caption"   :   "JSON file written from the recorded video"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_MCAM/LTD.webp",
+                "caption"   :   "Landmark Transformation Data parsed from JSON file and applied to skeleton bones in unreal engine 5"
+            }
+        ],
+        "links":
+        [
+            {
+                "label" : "Github",
+                "url"   : "https://github.com/LoneWolf014/MinorProject"
+            }
+        ],
+        "palette":{}
+    },
+    {
+        "id": "Play90s",
+        "title": "Play #90s",
+        "contentHTML":
+        [
+            "<p class='intro'>Mini arcade reboots — made just for fun.</p>",
+
+            "<p class='justify'>",
+                "<span class='highlight'>PLAY 90s</span> was my first hands-on game project — a tiny collection",
+                " of retro-inspired games built while exploring game dev basics through Harvard’s CS50x course.",
+                "It’s offline, fast to boot, and designed to feel like the kind of games you’d play on a school computer in the 2000s.",
+            "</p>",
+
+            "<p class='justify'>",
+                "I made two games with multiple variations: ",
+                "<span class='highlight'>Pong</span> with both 1P (vs CPU) and 2P modes,",
+                "available in classic black-and-white and a color-upgrade version.",
+                "Then a <span class='highlight'>Flappy Bird</span> clone — first the standard version,",
+                "and then a reboot called <span class='highlight'>Fly-UFO</span> with a neon city, alien sprite, and a parallax-scrolling sky.",
+            "</p>",
+
+            "<p class='justify'>",
+                "I mostly just wanted to understand how simple games *work* — drawing loops, input handling, collision, score tracking.",
+                "It’s not advanced or polished, but finishing this gave me the confidence to keep building games beyond tutorials.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Pong — 1P/2P (Classic + Color)</span></li>",
+                "<li>† <span class='highlight'>Flappy Bird — Classic + Fly-UFO</span></li>",
+                "<li>† <span class='highlight'>Simple UI / score / game loop</span></li>",
+                "<li>† <span class='highlight'>Playable offline</span></li>",
+            "</ul>"
+        ],
+        "heroImage": "assets/images/webp/GL_P90s/P90s.webp",
+        "gallery":
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/P90s.webp",
+                "caption"   :   "Main Menu of Play 90s"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/P90s2.webp",
+                "caption"   :   "Start Menu"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/P90s3.webp",
+                "caption"   :   "Fly UFO (Clone of Flappy Bird) menu"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/Pong.webp",
+                "caption"   :   "Screenshot of the good old Pong"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/FB1_GameOver.webp",
+                "caption"   :   "Fly UFO Game Over State"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/FB1_Menu.webp",
+                "caption"   :   "Fluffy Bird (Clone of more true to the OG Flappy Bird) menu"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_P90s/FB2_GameOver.webp",
+                "caption"   :   "Fluffy Bird Game Over State"
+            }
+        ],
+        "links":
+        [
+            {
+                "label" : "Github",
+                "url"   : "https://github.com/LoneWolf014/Play-90-s"
+            }
+        ],
+        "palette":{}
+    }
+]

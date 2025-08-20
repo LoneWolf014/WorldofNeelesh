@@ -1,0 +1,325 @@
+[
+    {
+        "id"    : "HD_2D_1",
+        "title" : "HD_2D Character",
+        "contentHTML" :
+        [
+            "<p class='intro'>",
+                "A 2D sprite dropped into a full 3D Unreal Engine world — looked cool, played rough.", 
+                "This prototype exposed every camera flaw I’d fix in the next one.",
+            "</p>",
+
+            "<p>",
+                "This was my first experiment mixing a <span class='highlight'>2D character</span> ",
+                "with a fully 3D environment in Unreal Engine. The camera was locked to face the sprite directly ",
+                "— almost like watching a stage play — and the sprite itself came from <span class='highlight'>Itch.io</span>, ",
+                "while the environment was kitbashed from the <span class='highlight'>UE Marketplace</span>.",
+            "</p>",
+
+            "<p>",
+                "While the effect looked interesting at first, the limitations showed up quickly: ",
+                "the camera <span class='highlight'>got stuck behind walls</span>, large props ",
+                "<span class='highlight'>obscured the player</span>, and anything overhead could ",
+                "<span class='highlight'>completely block the view</span>.",
+            "</p>",
+
+            "<p>",
+                "It wasn’t playable — not without serious camera logic. But this prototype became the ",
+                "foundation for my next project, where I’d start fixing every one of these problems.",
+            "</p>",
+
+            "<hr />",
+            "<p class = 'subsection justify'>",
+                "Quick Trivia - just for a brain feed",
+            "</p>",
+
+            "<p class='justify'>",
+                "Did you know that <span class='highlight'>SquareEnix</span> trademarked the terms ",
+                "<span class='highlight'><ins><em>'HD-2D'</em></ins></span> and <span class='highlight'><ins><em>'HD2D'</em></ins></span> in Europe",
+                "<br />",
+                "This was done to secure their usage of the term in connection with their game, ", 
+                "<span class='highlight'><ins><em>'Octopath Traveler'</em></ins></span>, and its unique visual style.",
+            "</p>"
+        ],
+        "heroImage" : "assets/images/webp/Unreal/HDCH.webp",
+        "gallery"   :
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/HDCH.webp",
+                "caption"   :   "2D character in 3D world"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/HDCH2.webp",
+                "caption"   :   "character getting covered cause of static cameras"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=yRUr5DnSOyQ",
+                "caption"   :   "this video shows how inconveniant and uncomfortable this camera style while playing"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "https://www.superjumpmagazine.com/content/images/2023/02/IMG_5916-1.JPG",
+                "caption"   :   "My inspiration - Octopath Traveller - the team designed and crafted the whole world with respect to the camera and balanced the scale and proportion of the props with respect to the character which makes the game look balanced."
+            }
+        ],
+        "links" :
+        [
+            {
+                "label" : "View Demo on Youtube",
+                "url"   : "https://youtu.be/yRUr5DnSOyQ"
+            }
+        ],
+        "palette" :
+        {
+
+        }
+    },
+    {
+        "id" : "HD_2D_2",
+        "title" : "HD_2D Cameras",
+        "contentHTML" : 
+        [
+            "<p class='intro'>",
+                "Zoom in. Zoom out. Flip perspective. This prototype gave my HD_2D characters a camera system they could finally breathe in.",
+            "</p>",
+
+            "<p>",
+                "After the issues in my first HD_2D character test — walls blocking the player, camera getting stuck, zero rotation — I decided to rebuild the camera system from scratch. Not to give full modern control, but just enough flexibility to keep the player visible and the environment readable.",
+            "</p>",
+
+            "<p>",
+                "This prototype added <span class='highlight'>zoom control</span> (via up/down arrows) and a <span class='highlight'>3-angle toggle</span> (via the <code>'C'</code>-key) to flip between three fixed but distinct views — straight-on, slightly angled, and almost top-down. These weren't true orbiting cameras, but simple swaps that made a big difference in visibility.",
+            "</p>",
+
+            "<p>",
+                "The biggest breakthrough was <span class='highlight'>occlusion masking</span>. Using a depth-based material trick (from Unreal’s own training video: “Depth & Location Based Effects”), I made any obstructing 3D walls or props fade out when they blocked the sprite. It wasn’t perfect, but suddenly the character was no longer lost behind crates or stairs.",
+            "</p>",
+
+            "<p>",
+                "All logic was done in <span class='highlight'>Blueprints</span> — no plugins, no C++. Just trial, error, and slowly wiring together a more playable HD_2D camera system.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Blueprint-based camera system</span></li>",
+                "<li>† <span class='highlight'>Zoom control tied to input</span></li>",
+                "<li>† <span class='highlight'>Fixed-angle camera toggle (3 views)</span></li>",
+                "<li>† <span class='highlight'>Wall occlusion masking using material logic</span></li>",
+                "<li>† <span class='highlight'>Built in Unreal Engine 5 with no external tools</span></li>",
+            "</ul>",
+
+            "<hr />",
+            "<p class = 'subsection justify'>",
+                "Quick Trivia - I feel like I had to say this here lol",
+            "</p>",
+
+            "<p class='justify'>",
+                "I really wished i could be a part of square enix team that developed octopath traveller",
+                " cz it's insane how they planned the level design and mechanics with the camera that only",
+                " face one direction and there is no camera control but still it's 2D and 3D",
+                " maybe that's why they chose this pokemon style world and camera angle and occlusion",
+                " i really wish i could learn from a team like that, like i want to learn how the real devs solve challenges,",
+                " how they collaborate and find out which mechanic compliments the challenge it's all sounds fun and interesting right?!",
+            "</p>",
+            "<p class= 'note'>",
+                "i chose this approach because i love octopath traveller visuals but sadly i am not a good enough artist or", 
+                " good enough 3D model artist to recreate those visuals... i am not bad at programming at logic tho so i solved that issue as a programmer.",
+                " <br />and also I think we should name these projects <ins><em>2D-3D hybrid</em></ins> since you know",
+                " <ins><em>HD2D</em></ins> is a trademarked word right?",
+            "</p>"
+        ],
+        "heroImage" : "assets/images/webp/Unreal/HD2DCams_OL.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/HD2DCams_OL.webp",
+                "caption"   :   "HD2D Camera final Iteration"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "assets/videos/HD_2D.mp4",
+                "poster"   :   "assets/images/webp/Unreal/HD2DCams2.webp",
+                "caption"   :   "Camera keep shifting it's position causing visual and motion fatigue in iteration - 2"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=osOn0uI-ZQky",
+                "caption"   :   "final iteration - alternate approach to what octopath traveller did. instead of building the world around it how about we gave minimal control to the player to adjust the view according to the world? and also little camera occlusion trick too"
+            }
+
+        ],
+        "links" : 
+        [
+            {
+                "label" : "View Demo on Youtube",
+                "url"   : "https://youtu.be/osOn0uI-ZQk"
+            }
+
+        ],
+        "palette" : 
+        {}
+    },
+    {
+        "id" : "MLB",
+        "title" : "My Last Breath — Cinematic Teaser (UE5)",
+        "contentHTML" : 
+        [
+
+            "<p class='intro'>",
+                "A rough cinematic test that helped me realize how far my dream project still is — and how badly I want to reach it.",
+            "</p>",
+
+            "<p>",
+                "This short teaser was built inside <span class='highlight'>Unreal Engine 5</span> as a visual spark for a much bigger story — ",
+                "my dream project, <span class='highlight'>My Last Breath</span>. It was loosely inspired by narrative games like ",
+                "<em>The Walking Dead</em>, and focused on a grieving survivor trying to carry the weight left behind by a woman named Yuki.",
+            "</p>",
+
+            "<p>",
+                "Yuki saved the protagonist and a group of other survivors — a baby named Alita, and an old man named Frank — but she didn’t make it.", 
+                "The teaser shows the aftermath: memory, loss, and reluctant leadership in an apocalyptic world where survival is brutal.",
+            "</p>",
+
+            "<p>",
+                "I used <span class='highlight'>kitbashed environments</span>, <span class='highlight'>Metahumans</span>, ",
+                "AI-generated voice from ElevenLabs, <span class='highlight'>Mixamo animations</span>, and rendered it all using ",
+                "<span class='highlight'>UE5’s sequencer and cinematic camera system</span>. But honestly — the scenes were ",
+                "poorly optimized, badly timed, and struggled with heavy lag and compression artifacts.",
+            "</p>",
+
+            "<p>",
+                "Still, I learned more than I expected. I spent a whole day animating a subtle smile on Yuki’s face — my first time working", 
+                " with facial rigs. That moment taught me how hard animation really is — and how powerful even a small gesture can be when it works.",
+            "</p>",
+
+            "<p>",
+                "This video didn’t turn out great. But it gave me a reality check: no one shows how hard it is to make something from nothing.", 
+                "Behind every polished scene are weeks of chaos. I uploaded it anyway. 100 views, 8 likes (including mine lol). But I’m proud that I tried.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>UE5 Cinematic Cameras + Sequencer</span></li>",
+                "<li>† <span class='highlight'>Metahuman animation with Mixamo</span></li>",
+                "<li>† <span class='highlight'>Voice acting with ElevenLabs AI</span></li>",
+                "<li>† <span class='highlight'>Lighting, ambience, and rough editing</span></li>",
+                "<li>† <span class='highlight'>Hard lessons in optimization</span></li>",
+            "</ul>"
+
+        ],
+        "heroImage" : "assets/images/webp/Unreal/MLB2.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/MLB2.webp",
+                "caption"   :   "A pretty ambitious trailer for someone who just installed unreal engine"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/MLB.webp",
+                "caption"   :   "But i'd say it's not that bad apart from compression issues"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=NFL0seo3jbk",
+                "caption"   :   "i don't think i can give an caption for this... i am so cherished and proud of this despite its flaws"
+            }
+        ],
+        "links" : 
+        [
+
+            {
+                "label" :"View Glimpse on Youtube",
+                "url"   : "https://youtu.be/NFL0seo3jbk?si=k0iUgwbZzSl1FmKR"
+            }
+
+        ],
+        "palette" : 
+        {}
+    },
+    {
+        "id" : "fire",
+        "title" : "Fire Material — Stylized Torch Flame Inspired by Zelda",
+        "contentHTML" : 
+        [
+            "<p class=\"intro\">",
+            "When Niagara melted my laptop, I had to rethink how fire even works.",
+            "</p>",
+            "<p>",
+            "This wasn’t just a torch effect — it was a crash course in optimization, layering, and stylized art.",
+            "I was working on my action-adventure project <span class=\"highlight\">Lost in Castle</span>,",
+            "and my original fire system used Unreal’s <span class=\"highlight\">Niagara particle system</span> with thousands of particles per torch.",
+            "It looked okay… until I had a dozen torches. Frame rate dropped. Lighting washed out. Everything turned into a wall of glowing white.",
+            "</p>",
+            "<p>",
+            "So I scrapped it and rebuilt the fire from scratch using a <span class=\"highlight\">layered shader approach</span>.",
+            "Inspired by <em>Diablo III’s</em> effects breakdown in the link given below (if any one's interested),",
+            "I used texture blending and panning instead of brute force particles.",
+            "</p>",
+            "<p>",
+            "I hand-drew a stylized flame shape in <span class=\"highlight\">Photoshop</span>,",
+            "then layered it with 2–3 scrolling noise textures to simulate motion and distortion.",
+            "No flipbooks. No baked simulations. Just <span class=\"highlight\">alpha-masked planes with clever math</span>.",
+            "</p>",
+            "<p>",
+            "Once the base material was set, I applied it to a minimal Niagara setup —",
+            "around <span class=\"highlight\">10–20 particles max per torch</span>.",
+            "The result? More readable fire, stylized glow, and a dramatic cut in GPU load.",
+            "It looked closer to <em>Zelda: Breath of the Wild</em> than I expected — not exact, but on the right path.",
+            "</p>",
+            "<p>",
+            "This wasn’t just an effect — it became a reminder that performance and style aren’t opposites.",
+            "And it deserves its own slot, separate from the rest of the project that made it necessary.",
+            "</p>",
+            "<ul class=\"skills\">",
+            "<li>† <span class=\"highlight\">Stylized fire shader using layered scrolling textures</span></li>",
+            "<li>† <span class=\"highlight\">Photoshop-created alpha masks and noise maps</span></li>",
+            "<li>† <span class=\"highlight\">Niagara system with 90% fewer particles</span></li>",
+            "<li>† <span class=\"highlight\">Inspired by Diablo III and Zelda fire techniques</span></li>",
+            "<li>† <span class=\"highlight\">Built for performance-constrained systems</span></li>",
+            "</ul>"
+
+        ],
+        "heroImage" : "assets/images/webp/Unreal/Fire_OL.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/Fire_OL.webp",
+                "caption"   :   "what you're seeing here is a plane... with animated texture"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/Fire1.webp",
+                "caption"   :   "Alpha mask of the flame made in photoshop"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/Unreal/Fire2.webp",
+                "caption"   :   "Noise Texture panned on top of the alpha mask"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=SpshquajXp8",
+                "caption"   :   "Iterations of the fire from rendering completely from niagara particles to 3D modelling and using texture layering"
+            }
+
+        ],
+        "links" : 
+        [
+            {
+                "label" : "Julian Love’s GDC 2013 talk",
+                "url"   : "https://www.youtube.com/watch?v=4Yz6srU6G1I"
+            },
+            {
+                "label" :   "View on Youtube",
+                "url"   :   "https://youtu.be/SpshquajXp8"
+            }
+        ],
+        "palette" : 
+        {}
+    }
+]

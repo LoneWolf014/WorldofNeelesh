@@ -1,0 +1,295 @@
+[
+    {
+        "id" : "TEXTCRT",
+        "title" : "TEXT Adventure - Homage to Past",
+        "contentHTML" : 
+        [
+            "<p class='intro'>Terminal-style text game prototype built with Python, Pygame, and vibes</p>",
+
+            "<p>",
+                "I built this retro-inspired <span class='highlight'>text adventure engine</span> after getting curious about how games like <span class='highlight'>Zork</span> worked before graphics existed.",
+                "It’s not a full game — more of a design experiment to test out <span class='highlight'>typed commands</span> like <code>move left</code>, <code>take key</code>, <code>use terminal</code>,",
+                "and how to manage those in a minimal UI.",
+            "</p>",
+
+            "<p>",
+                "The prototype includes:",
+                "- a glowing CRT-style <span class='highlight'>text renderer</span>",
+                "- a responsive <span class='highlight'>command parser</span> and scrollable message log",
+                "- <span class='highlight'>3D skull renderer</span> that rotates in real-time",
+                "- custom <span class='highlight'>procedural sound effects</span> (startup, typing, errors, etc.)",
+                "— all handled via <span class='highlight'>Pygame</span> with no external assets.",
+            "</p>",
+
+            "<p>",
+                "Honestly, I didn’t know where this was going — I just started vibe coding after a late-night chat about interactive fiction", 
+                "with <span class='highlight'>ChatGPT</span> and <span class='highlight'>Claude</span>. ",
+                "Every system was vibe-coded into modules: text manager, game state, 3D renderer, sound manager. ",
+                "No engine. No framework. Just one window, one keyboard, and a glowing cursor.",
+            "</p>",
+
+            "<p>",
+                "It’s weirdly satisfying watching a fake terminal blink while you type “look around.” ",
+                "I might evolve this into a full parser game someday... or just keep it as a time capsule from when I discovered how old games thought.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Command parsing system</span></li>",
+                "<li>† <span class='highlight'>Custom CRT-style text renderer</span></li>",
+                "<li>† <span class='highlight'>Procedural sound effects (pure Python)</span></li>",
+                "<li>† <span class='highlight'>Real-time 3D skull rendered with math</span></li>",
+                "<li>† <span class='highlight'>Typed input + scrollback + color cycling</span></li>",
+            "</ul>"
+        ],
+        "heroImage" : "assets/images/webp/GL_TA/CRT_TXT.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_TA/CRT_TXT.webp",
+                "caption"   :   "Basic Text Adventure Game"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=JQLCk4czACk",
+                "caption"   :   "Simple Demo"
+            }
+        ],
+        "links" : 
+        [
+            {
+                "label" : "Github",
+                "url"   : "https://github.com/LoneWolf014/CRT_Text_Adventure"
+            }
+
+        ],
+        "palette" :
+        {
+
+        }
+    },
+    {
+        "id" : "CRT_SNAKE_1",
+        "title" : "CRT_Snake — version-1",
+        "contentHTML" : 
+        [
+            "<p class='intro'>",
+                "CRT_Snake — Retro Glow, 3D Shapes, and Pure Vibe Coding",
+            "</p>",
+
+            "<p>",
+                "I ended up building not one, but <span class='highlight'>two versions</span> of this — one for shader experiments, another to explore themes and transparency. ",
+                "Both born from a single goal: mess with retro visuals until they looked like a CRT fever dream.",
+            "</p>",
+
+            "<p>",
+                "This first version is built entirely in <span class='highlight'>Pygame</span>, recreating Snake inside a retro CRT aesthetic with glowing scanlines and <span class='highlight'>manually rendered 3D shapes</span> rotating in every corner. ",
+                "I handled everything from <span class='highlight'>vector math</span> to <span class='highlight'>phosphor beam effects</span> — no engines, no shaders, just pixels.",
+            "</p>",
+
+            "<p>",
+                "Not gonna lie — most of the heavy lifting was done by <span class='highlight'>ChatGPT</span> and <span class='highlight'>Claude</span>.", 
+                "I just supplied the idea, the visuals I wanted, and some late-night energy. They wrote most of the code. I rewired, stitched, and polished it into this haunted arcade demo.",
+            "</p>",
+
+            "<p>",
+                "The highlight? The glowing scanline isn’t just for show — it reacts in real-time when it sweeps over the snake or food. Feels like you're playing inside a dying monitor with attitude.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Classic Snake core mechanics</span></li>",
+                "<li>† <span class='highlight'>Manually rendered 3D cubes, pyramids, tetrahedrons</span></li>",
+                "<li>† <span class='highlight'>CRT scanline + phosphor glow engine</span></li>",
+                "<li>† <span class='highlight'>No shaders — all effects in raw Pygame</span></li>",
+                "<li>† <span class='highlight'>Beam glow reacts to live gameplay</span></li>",
+            "</ul>"
+        ],
+        "heroImage" : "assets/images/webp/GL_Snake1/Snake1.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_Snake1/Snake1.webp",
+                "caption"   :   "Screenshot of Classic Snake game with CRT Shaders"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=rFOMQUrHkyA",
+                "caption"   :   "Gameplay video of Classic Snake Game clone with CRT Shaders"
+            }
+        ],
+        "links" : 
+        [
+            {
+                "label" : "Github",
+                "url"   : "https://github.com/LoneWolf014/CRT_Snake_PyGame_V_1"
+            },
+            {
+                "label" : "Youtube",
+                "url"   : "https://www.youtube.com/watch?v=rFOMQUrHkyA"
+            }
+        ],
+        "palette" :
+        {
+            
+        }
+    },
+    {
+        "id" : "CRT_SNAKE_2",
+        "title" : "CRT_Snake — version-2",
+        "contentHTML" : 
+        [
+
+            "<p class='intro'>",
+            "    CRT_Snake v2 — Thematic Snake with Retro CRT Skins",
+            "</p>",
+            "<p class='intro'>",
+            "    Did I build Snake? Not really. Did I vibe-code the heck out of it with AI? Absolutely.",
+            "</p>",
+
+            "<p>",
+                "This version of <span class='highlight'>CRT Snake</span> was coded in both",
+                "<span class='highlight'>Python</span> and <span class='highlight'>Java</span>,",
+                " but the <strong>Java build won</strong> — smoother alpha rendering, pixel-perfect CRT effects,",
+                "and that sweet, crisp look only Java2D gives when you treat it like a shader lab.",
+            "</p>",
+
+            "<p>",
+                "Every <span class='highlight'>5 points</span>, the game cycles to a new retro theme:", 
+                "from glowing green terminals to warm amber monitors to chunky blue pixel styles with banding and noise.", 
+                "The CRT isn't just for looks — the screen has", 
+                "<span class='highlight'>scanlines, ghost trails,",
+                "phosphor glow, chunky pixel overlays, banding artifacts</span>, and a moving beamline that reacts to gameplay in real-time.",
+            "</p>",
+
+            "<p>",
+                "Built completely in <span class='highlight'>pure Java Swing</span> (and optionally <span class='highlight'>Pygame</span> for the Python version),", 
+                "this project started as a shader test and spiraled into a dual-engine CRT love letter.",
+                "I wrote zero real logic — everything was co-written by <span class='highlight'>ChatGPT</span> and <span class='highlight'>Claude</span>. ",
+                "I just vibed the idea into existence.",
+            "</p>",
+
+            "<ul class='skills'>",
+            "    <li>† <span class='highlight'>Dynamic CRT theme switching every 5 points</span></li>",
+            "    <li>† <span class='highlight'>Scanlines, phosphor glow, pixel noise, banding</span></li>",
+            "    <li>† <span class='highlight'>Clean alpha blending & ghosting in Java2D</span></li>",
+            "    <li>† <span class='highlight'>Rewritten from Python to Java for visual clarity</span></li>",
+            "    <li>† <span class='highlight'>Built with AI pair-programming + pure vibes</span></li>",
+            "</ul>"
+
+        ],
+        "heroImage" : "assets/images/webp/GL_Snake2/Snake2.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_Snake2/Snake2.webp",
+                "caption"   :   "Shader Style 1"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_Snake2/Snake2-1.webp",
+                "caption"   :   "Shader Style 2"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_Snake2/Snake2-2.webp",
+                "caption"   :   "Shader Style 3"
+            },
+            {
+                "type"      :   "video",
+                "src"       :   "https://www.youtube.com/watch?v=407xGToLmzs",
+                "caption"   :   "Theme will change after every 5 pellets"
+            }
+        ],
+        "links" : 
+        [
+            {
+                "label"     : "Github - Python (Pygame)",
+                "url"       : "https://github.com/LoneWolf014/CRT_Snake_PyGame_V_2"
+            },
+            {
+                "label"     : "Github - JAVA",
+                "url"       : "https://github.com/LoneWolf014/CRT_Snake_V_2_Java"
+            },
+            {
+                "label"     :   "Youtube",
+                "url"       :   "https://youtu.be/407xGToLmzs"
+            }
+        ],
+        "palette" :
+        {
+            
+        }
+    },
+    {
+        "id" : "CRT_Hangman",
+        "title" : "Terminal Hangman - Hello World of Game Programming",
+        "contentHTML" : 
+        [
+
+            "<p class='intro'>",
+                "Old-school Hangman reimagined as a CRT terminal game — green glow, ASCII borders, and that 80s hacker vibe.",
+            "</p>",
+
+            "<p>",
+                "<span class='highlight'>CRT_Hangman</span> is a terminal-based rework of the classic ",
+                "word-guessing game, styled like it’s running on an old green-screen monitor. ",
+                "It uses a <span class='highlight'>bordered ASCII UI</span>, glowing text ",
+                "via <code>colorama</code>, and a subtle <span class='highlight'>scanline-style refresh effect</span> ",
+                "to sell the vintage vibe.",
+            "</p>",
+
+            "<p>",
+                "This was more of a retro design experiment than a game challenge — ",
+                "a simple Python build with some UI polish. ",
+                "The <span class='highlight'>hangman figure</span> is rendered stage-by-stage ",
+                "in text art, and the whole thing is wrapped in a CRT-styled frame that redraws ",
+                "like an old screen refreshing line by line.",
+            "</p>",
+
+            "<p>",
+                "I worked on this with <span class='highlight'>ChatGPT</span> and <span class='highlight'>Claude</span>, ",
+                "mostly tossing in the ideas and letting them handle the code. ",
+                "Quick build, fun aesthetic, satisfying little side project.",
+            "</p>",
+
+            "<ul class='skills'>",
+                "<li>† <span class='highlight'>Terminal-based CRT aesthetic</span></li>",
+                "<li>† <span class='highlight'>ASCII-rendered hangman stages</span></li>",
+                "<li>† <span class='highlight'>Green-on-black scanline refresh effect</span></li>",
+                "<li>† <span class='highlight'>Built with Python and Colorama only</span></li>",
+                "<li>† <span class='highlight'>AI pair-coded and fully terminal-native</span></li>",
+            "</ul>"
+
+        ],
+        "heroImage" : "assets/images/webp/GL_Hangman/TH.webp",
+        "gallery" : 
+        [
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_Hangman/TH.webp",
+                "caption"   :   "Hangman Game in terminal/console"
+            },
+            {
+                "type"      :   "image",
+                "src"       :   "assets/images/webp/GL_Hangman/TH_OL.webp",
+                "caption"   :   "Hangman Game in terminal/console"
+            }
+
+        ],
+        "links" : 
+        [
+
+            {
+                "label" : "view on Github",
+                "url"   : "https://github.com/LoneWolf014/Terminal_Hangman_Python"
+            }
+
+        ],
+        "palette" :
+        {
+            
+        }
+    }
+]
