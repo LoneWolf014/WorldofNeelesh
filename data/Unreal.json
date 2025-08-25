@@ -266,10 +266,10 @@
             "I replaced brute-force particles with texture blending and scrolling noise.",
           "</p>",
         
-          "<ul>",
-            "<li>Drew a <span class='highlight'>stylized flame silhouette</span> in Photoshop.</li>",
-            "<li>Layered <span class='highlight'>2–3 scrolling noise textures</span> to simulate distortion and motion.</li>",
-            "<li>Used <span class='highlight'>alpha-masked planes</span> instead of flipbooks or baked sims.</li>",
+          "<ul class='skills'>",
+            "<li>† <span class='highlight'> Drew a <span class='highlight'>stylized flame silhouette</span> in Photoshop.</li>",
+            "<li>† <span class='highlight'> Layered <span class='highlight'>2–3 scrolling noise textures</span> to simulate distortion and motion.</li>",
+            "<li>† <span class='highlight'> Used <span class='highlight'>alpha-masked planes</span> instead of flipbooks or baked sims.</li>",
           "</ul>",
         
           "<p>",
@@ -316,6 +316,11 @@
                 "type"      :   "video",
                 "src"       :   "https://www.youtube.com/watch?v=SpshquajXp8",
                 "caption"   :   "Iterations of the fire from rendering completely from niagara particles to 3D modelling and using texture layering"
+            },
+            {
+                "type": "video", 
+                "src" : "https://www.youtube.com/watch?v=Ef9kW-POO7w",
+                "caption" : "Final Fire Torch look in the game..."
             }
 
         ],
