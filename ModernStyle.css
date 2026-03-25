@@ -621,6 +621,10 @@ section[id], footer[id] {
     content: 'About Me';
 }
 
+#NeonBounce .Section_Heading::after {
+    content: 'Latest Work   -   NeonBounce';
+}
+
 .AboutMe .container {
     border: 2px solid black;
     border-radius: 2em;
@@ -1818,3 +1822,4 @@ section[id], footer[id] {
         overflow-y: auto;
     }
 }
+

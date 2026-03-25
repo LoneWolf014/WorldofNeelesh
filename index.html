@@ -32,6 +32,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="ModernStyle.css">
+    <link rel="stylesheet" href="popup.css">
 
     
 </head>
@@ -83,6 +84,49 @@
             </div>
         </div>
     </section>
+
+    <!-- POP-UP -->
+    <!-- OUTDATED NOTICE POPUP -->
+    <div class="site-notice" id="siteNotice" role="dialog" aria-modal="true" aria-label="Site Notice">
+        <div class="site-notice-content">
+            
+            <button class="site-notice-close" id="siteNoticeClose" aria-label="Close notice">
+                <svg stroke="var(--btn-clr)" fill="none" class="hamBurger" viewBox="-10 -10 120 120" width="32">
+                    <path class="line"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                    </path>
+                </svg>
+            </button>
+
+            <p class="site-notice-emoji">🚧</p>
+            <h2 class="site-notice-title">Heads up!</h2>
+            
+            <p class="site-notice-body">
+                This is a slightly older build — a few things have happened since:
+            </p>
+
+            <ul class="site-notice-list">
+                <li>Shipped a Pong project</li>
+                <li>Exploring stylized Unreal shading — MatCaps, Lambert, and more</li>
+            </ul>
+
+            <p class="site-notice-body">
+                Some sections run quite long —
+                the lightbox galleries are the quickest way through.
+            </p>
+
+            <p class="site-notice-body site-notice-closing">
+                A cleaner version is on the way.
+                Until then, <strong>Resume</strong> and <strong>Instagram</strong> have the latest.
+            </p>
+
+            <button class="site-notice-btn" id="siteNoticeBtn">Got it</button>
+        </div>
+    </div>
+    <!-- ------ -->
 
 
     <header class="primary-header flex">
@@ -197,6 +241,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <section class="Projects flex" id="Projects">
         <hr class="hr-text" data-content="College Projects">
@@ -488,9 +534,8 @@
 
         <div class="lightbox-thumbnails"></div>
     </div>
-
-
     
     <script src="ModernScriptt.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>
